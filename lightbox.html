@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.css" rel="stylesheet">
+
+
+	<title>Lightbox</title>
+</head>
+<body>
+	<main>
+		<div class="controls">
+      <button type="button" class="control" data-filter="all">All</button>
+      <button type="button" class="control" data-filter=".haring">Keith Haring</button>
+      <button type="button" class="control" data-filter=".lichtenstein">Roy Lichtenstein</button>
+      <button type="button" class="control" data-filter=".doesburg">Theo van Doesburg</button>
+      <button type="button" class="control" data-filter="none">None</button>
+
+      <button type="button" class="control" data-sort="default:asc">Asc</button>
+      <button type="button" class="control" data-sort="default:desc">Desc</button>
+			<button type="button" data-sort="random">Random</button>
+    </div>
+
+		<div class = "gallery container">
+			<a class = "mix haring" href="images/Keith Haring 1.png" data-lightbox="Keith Haring"> <img src="images/Keith Haring 1.png" alt="Keith Harling 1"></a>
+			<a class = "mix haring" href="images/Keith Haring 2.png" data-lightbox="Keith Haring"> <img src="images/Keith Haring 2.png" alt="Keith Harling 2"></a>
+			<a class = "mix haring" href="images/Keith Haring 3.png" data-lightbox="Keith Haring"> <img src="images/Keith Haring 3.png" alt="Keith Harling 3"></a>
+			<a class = "mix lichtenstein" href="images/Roy Lichtenstein 1.png" data-lightbox="Roy Lichtenstein"> <img src="images/Roy Lichtenstein 1.png" alt="Roy Lichtenstein 1"></a>
+			<a class = "mix lichtenstein" href="images/Roy Lichtenstein 2.png" data-lightbox="Roy Lichtenstein"> <img src="images/Roy Lichtenstein 2.png" alt="Roy Lichtenstein 2"></a>
+			<a class = "mix lichtenstein" href="images/Roy Lichtenstein 3.png" data-lightbox="Roy Lichtenstein"> <img src="images/Roy Lichtenstein 3.png" alt="Roy Lichtenstein 3"></a>
+			<a class = "mix doesburg" href="images/Theo van Doesburg 1.png" data-lightbox="Theo van Doesburg"> <img src="images/Theo van Doesburg 1.png" alt="Theo van Doesburg 1"></a>
+			<a class = "mix doesburg" href="images/Theo van Doesburg 2.png" data-lightbox="Theo van Doesburg"> <img src="images/Theo van Doesburg 2.png" alt="Theo van Doesburg 2"></a>
+			<a class = "mix doesburg" href="images/Theo van Doesburg 3.png" data-lightbox="Theo van Doesburg"> <img src="images/Theo van Doesburg 3.png" alt="Theo van Doesburg 3"></a>
+		</div>
+
+
+  </main>
+
+
+	<script src="js/lightbox-plus-jquery.js"></script>
+
+	<script src="js/mixitup.min.js"></script>
+
+  <script>
+      var mixer = mixitup('.container');
+
+  </script>
+</body>
+</html>
